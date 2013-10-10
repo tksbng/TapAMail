@@ -300,6 +300,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)]) {
+        // iOS 7
+        [self prefersStatusBarHidden];
+        [self performSelector:@selector(setNeedsStatusBarAppearanceUpdate)];
+    } else {
+        // iOS 6以下でステータスバーを削除したい場合
+        [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
+    }
+
     // 背景に色を付ける
     [[self view] setBackgroundColor:[UIColor colorWithRed:0.565f green:0.431f blue:0.270f alpha:1.0f]];
     // 表示系パーツの準備
@@ -312,4 +321,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+// メソッド追加する
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
 @end

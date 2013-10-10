@@ -408,6 +408,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TapAMail/TapAMail-Prefix.pch";
 				INFOPLIST_FILE = "TapAMail/TapAMail-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -419,6 +420,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TapAMail/TapAMail-Prefix.pch";
 				INFOPLIST_FILE = "TapAMail/TapAMail-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -477,6 +479,7 @@
 				FF9DC6BE17D174A900C47A33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF9DC6BF17D174A900C47A33 /* Build configuration list for PBXNativeTarget "TapAMailTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +488,7 @@
 				FF9DC6C117D174A900C47A33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
